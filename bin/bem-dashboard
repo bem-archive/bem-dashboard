@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var conf = require('../.config'),
+    options = {
+        api_key : conf.API_KEY
+    };
+
+var ducksnode = require('ducksnode').create(options),
+    total = conf.IMAGE_WIDGET_VALUES.length,
+    current = 0;
+
+setInterval(function() {
+
+    ducksnode.push(conf.IMAGE_WIDGET, { value: conf.IMAGE_WIDGET_VALUES[current] }, function(err, res) {
+        if (err) console.error(err);
+        else console.log(res);
+    });
+
+    current++;
+    if (current == total) current = 0;
+
+}, conf.IMAGE_WIDGET_TIMEOUT);

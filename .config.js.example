@@ -1,0 +1,24 @@
+// Ducksboard API key
+exports.API_KEY = '<put your ducksboard API key here>';
+
+// Image widget identifier
+exports.IMAGE_WIDGET = '74813';
+
+// Image sources
+exports.IMAGE_WIDGET_VALUES = [
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/black.png' },
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/blurish.jpg' },
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/cardio.png' },
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/coloris.png' },
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/life.png' },
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/stones.png' },
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/stripes.png' },
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/struct.png' },
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/america.png' },
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/batman.png' },
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/hawkeye.png' },
+    { source: 'https://raw.github.com/bem/bem-dashboard/master/logos/ironman.png' }
+];
+
+// Image rotation timeout
+exports.IMAGE_WIDGET_TIMEOUT = 10000;
